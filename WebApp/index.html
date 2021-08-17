@@ -6,9 +6,25 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="drag.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="../TestingData/Cat/egypt_kitty_social.jpg" alt="Fucker" id="user-image" width="224" height="224">
-    <button onclick="predict()">Prediction</button>
+    <div class="float-container">
+        <div class="drag-area float-child">
+            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <header>Drag & Drop to Upload File</header>
+            <span>OR</span>
+            <button>Browse File</button>
+            <input type="file" hidden>
+        </div>
+    
+        <div class="diplay float-child">
+            <img src="../TestingData/Cat/14.jpeg" alt="Fucker" id="user-image" width="224" height="224">
+            <button onclick="predict()">Prediction</button>
+            </br>
+            <h1 id="result" style="color: azure;">Click The Button</h1>
+        </div>
+    </div>     
 </body>
 </html>
